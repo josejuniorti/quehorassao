@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <meta http-equiv="refresh" content="1">
+</head>
+<body>
+    <section class="sechora">
+        <h1>Que horas são?</h1>
+        <script>
+            const data = new Date();
+            const hours = data.getHours(); 
+            const min = data.getMinutes();
+            const sec = data.getSeconds();
+            var stringHours = hours + ':' + min + ':' + sec;
+            document.write(stringHours);
+        </script>
+    </section>
+</body>
+</html>

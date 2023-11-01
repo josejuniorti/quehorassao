@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que Horas são? Que Dia é hoje? - Saiba a data de hoje e que horas são</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+<body>
+    <section>
+        <section class="secdatahora">
+            <iframe src="relogio.html" style="width:100%; height:auto; overflow:hidden;"></iframe>
+            <h1>Que dia é hoje?</h1>
+                <script>
+                    const data = new Date();
+                    const day = data.getDate();
+                    const month = data.getMonth();
+                    const year = data.getFullYear();
+                    var stringData = day + '/' + (month+1) + '/' + year;
+                    document.write(stringData);
+                </script>
+        </section>
+    </section>
+</body>
+</html>
